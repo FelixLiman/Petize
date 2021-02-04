@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02CD05B25CA382000B0CD44 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD05A25CA382000B0CD44 /* UIFont+Extension.swift */; };
+		C02CD06125CA395600B0CD44 /* Margin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD06025CA395600B0CD44 /* Margin.swift */; };
+		C02CD06825CA42D200B0CD44 /* PetCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD06725CA42D200B0CD44 /* PetCollectionCell.swift */; };
+		C02CD06B25CA434100B0CD44 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD06A25CA434100B0CD44 /* UIView+Extension.swift */; };
+		C02CD06E25CA437300B0CD44 /* UIAppearance+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD06D25CA437300B0CD44 /* UIAppearance+Extension.swift */; };
+		C02CD07225CA490A00B0CD44 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C02CD07125CA490A00B0CD44 /* Alamofire */; };
+		C02CD07525CA83FE00B0CD44 /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD07425CA83FE00B0CD44 /* Breeds.swift */; };
+		C02CD07925CA901C00B0CD44 /* Kenfolg.otf in Resources */ = {isa = PBXBuildFile; fileRef = C02CD07825CA901C00B0CD44 /* Kenfolg.otf */; };
+		C02CD07D25CA934500B0CD44 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C02CD07C25CA934500B0CD44 /* RxCocoa */; };
+		C02CD07F25CA934500B0CD44 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C02CD07E25CA934500B0CD44 /* RxSwift */; };
+		C02CD08225CAA43100B0CD44 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD08125CAA43100B0CD44 /* UIColor+Extension.swift */; };
+		C02CD08525CAA43F00B0CD44 /* CGFloat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02CD08425CAA43F00B0CD44 /* CGFloat+Extension.swift */; };
 		C0A5E58C25C94CA20053D689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5E58B25C94CA20053D689 /* AppDelegate.swift */; };
 		C0A5E59025C94CA20053D689 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A5E58F25C94CA20053D689 /* MainViewController.swift */; };
 		C0A5E59525C94CA40053D689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A5E59425C94CA40053D689 /* Assets.xcassets */; };
@@ -21,6 +33,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C02CD05A25CA382000B0CD44 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		C02CD06025CA395600B0CD44 /* Margin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Margin.swift; sourceTree = "<group>"; };
+		C02CD06725CA42D200B0CD44 /* PetCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionCell.swift; sourceTree = "<group>"; };
+		C02CD06A25CA434100B0CD44 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C02CD06D25CA437300B0CD44 /* UIAppearance+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAppearance+Extension.swift"; sourceTree = "<group>"; };
+		C02CD07425CA83FE00B0CD44 /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
+		C02CD07825CA901C00B0CD44 /* Kenfolg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kenfolg.otf; sourceTree = "<group>"; };
+		C02CD08125CAA43100B0CD44 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C02CD08425CAA43F00B0CD44 /* CGFloat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extension.swift"; sourceTree = "<group>"; };
 		C0A5E58825C94CA10053D689 /* Petize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A5E58B25C94CA20053D689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A5E58F25C94CA20053D689 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -40,19 +61,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02CD07D25CA934500B0CD44 /* RxCocoa in Frameworks */,
 				C0A5E5C025C950450053D689 /* SnapKit in Frameworks */,
+				C02CD07F25CA934500B0CD44 /* RxSwift in Frameworks */,
+				C02CD07225CA490A00B0CD44 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C000064425C950EF00E84166 /* Assets */ = {
+		C000064425C950EF00E84166 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
+				C02CD05D25CA38A300B0CD44 /* Font */,
 				C0A5E59425C94CA40053D689 /* Assets.xcassets */,
 			);
-			path = Assets;
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		C02CD05925CA380000B0CD44 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C02CD05A25CA382000B0CD44 /* UIFont+Extension.swift */,
+				C02CD06A25CA434100B0CD44 /* UIView+Extension.swift */,
+				C02CD06D25CA437300B0CD44 /* UIAppearance+Extension.swift */,
+				C02CD08125CAA43100B0CD44 /* UIColor+Extension.swift */,
+				C02CD08425CAA43F00B0CD44 /* CGFloat+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C02CD05D25CA38A300B0CD44 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C02CD07825CA901C00B0CD44 /* Kenfolg.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C02CD05F25CA394900B0CD44 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C02CD06025CA395600B0CD44 /* Margin.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C02CD06625CA42CA00B0CD44 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C02CD06725CA42D200B0CD44 /* PetCollectionCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C0A5E57F25C94CA10053D689 = {
@@ -74,9 +135,9 @@
 		C0A5E58A25C94CA10053D689 /* Petize */ = {
 			isa = PBXGroup;
 			children = (
-				C000064425C950EF00E84166 /* Assets */,
-				C0A5E5B725C94DE60053D689 /* Customs */,
-				C0A5E5A125C94CCD0053D689 /* Features */,
+				C000064425C950EF00E84166 /* Asset */,
+				C0A5E5B725C94DE60053D689 /* Custom */,
+				C0A5E5A125C94CCD0053D689 /* Feature */,
 				C0A5E5A025C94CB20053D689 /* Root */,
 			);
 			path = Petize;
@@ -92,33 +153,37 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		C0A5E5A125C94CCD0053D689 /* Features */ = {
+		C0A5E5A125C94CCD0053D689 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
 				C0A5E5A225C94CD50053D689 /* Main */,
 			);
-			path = Features;
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		C0A5E5A225C94CD50053D689 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C02CD06625CA42CA00B0CD44 /* Cell */,
 				C0A5E5AD25C94D190053D689 /* MainInteractor.swift */,
 				C0A5E5A725C94D0A0053D689 /* MainPresenter.swift */,
 				C0A5E5B025C94D220053D689 /* MainProtocol.swift */,
 				C0A5E5AA25C94D100053D689 /* MainRouter.swift */,
 				C0A5E5A425C94CF50053D689 /* MainView.swift */,
 				C0A5E58F25C94CA20053D689 /* MainViewController.swift */,
+				C02CD07425CA83FE00B0CD44 /* Breeds.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		C0A5E5B725C94DE60053D689 /* Customs */ = {
+		C0A5E5B725C94DE60053D689 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				C02CD05F25CA394900B0CD44 /* Base */,
+				C02CD05925CA380000B0CD44 /* Extension */,
 				C0A5E5B825C94DEC0053D689 /* CollectionView Layout */,
 			);
-			path = Customs;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		C0A5E5B825C94DEC0053D689 /* CollectionView Layout */ = {
@@ -147,6 +212,9 @@
 			name = Petize;
 			packageProductDependencies = (
 				C0A5E5BF25C950450053D689 /* SnapKit */,
+				C02CD07125CA490A00B0CD44 /* Alamofire */,
+				C02CD07C25CA934500B0CD44 /* RxCocoa */,
+				C02CD07E25CA934500B0CD44 /* RxSwift */,
 			);
 			productName = Petize;
 			productReference = C0A5E58825C94CA10053D689 /* Petize.app */;
@@ -177,6 +245,8 @@
 			mainGroup = C0A5E57F25C94CA10053D689;
 			packageReferences = (
 				C0A5E5BE25C950450053D689 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C02CD07025CA490A00B0CD44 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C02CD07B25CA934500B0CD44 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = C0A5E58925C94CA10053D689 /* Products */;
 			projectDirPath = "";
@@ -192,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02CD07925CA901C00B0CD44 /* Kenfolg.otf in Resources */,
 				C0A5E59825C94CA40053D689 /* LaunchScreen.storyboard in Resources */,
 				C0A5E59525C94CA40053D689 /* Assets.xcassets in Resources */,
 			);
@@ -204,12 +275,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02CD07525CA83FE00B0CD44 /* Breeds.swift in Sources */,
 				C0A5E5BB25C94E5C0053D689 /* DynamicCollectionLayout.swift in Sources */,
 				C0A5E5A825C94D0A0053D689 /* MainPresenter.swift in Sources */,
 				C0A5E59025C94CA20053D689 /* MainViewController.swift in Sources */,
 				C0A5E5A525C94CF50053D689 /* MainView.swift in Sources */,
+				C02CD06825CA42D200B0CD44 /* PetCollectionCell.swift in Sources */,
 				C0A5E58C25C94CA20053D689 /* AppDelegate.swift in Sources */,
+				C02CD06B25CA434100B0CD44 /* UIView+Extension.swift in Sources */,
+				C02CD06E25CA437300B0CD44 /* UIAppearance+Extension.swift in Sources */,
+				C02CD08225CAA43100B0CD44 /* UIColor+Extension.swift in Sources */,
+				C02CD08525CAA43F00B0CD44 /* CGFloat+Extension.swift in Sources */,
 				C0A5E5B125C94D220053D689 /* MainProtocol.swift in Sources */,
+				C02CD05B25CA382000B0CD44 /* UIFont+Extension.swift in Sources */,
+				C02CD06125CA395600B0CD44 /* Margin.swift in Sources */,
 				C0A5E5AE25C94D190053D689 /* MainInteractor.swift in Sources */,
 				C0A5E5AB25C94D100053D689 /* MainRouter.swift in Sources */,
 			);
@@ -407,6 +486,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C02CD07025CA490A00B0CD44 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		C02CD07B25CA934500B0CD44 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		C0A5E5BE25C950450053D689 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -418,6 +513,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C02CD07125CA490A00B0CD44 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C02CD07025CA490A00B0CD44 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C02CD07C25CA934500B0CD44 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C02CD07B25CA934500B0CD44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C02CD07E25CA934500B0CD44 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C02CD07B25CA934500B0CD44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		C0A5E5BF25C950450053D689 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C0A5E5BE25C950450053D689 /* XCRemoteSwiftPackageReference "SnapKit" */;

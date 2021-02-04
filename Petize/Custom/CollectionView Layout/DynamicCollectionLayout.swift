@@ -18,8 +18,8 @@ class DynamicCollectionLayout: UICollectionViewFlowLayout {
     
     var numberOfColumns: Int = 0
     var cellPadding: CGFloat = 0
-    var cellInterItemSpacing: CGFloat = 0
-    var cellLineSpacing: CGFloat = 0
+//    var cellInterItemSpacing: CGFloat = 0
+//    var cellLineSpacing: CGFloat = 0
     private var cache: [UICollectionViewLayoutAttributes] = []
 
     private var contentHeight: CGFloat = 0
@@ -28,7 +28,7 @@ class DynamicCollectionLayout: UICollectionViewFlowLayout {
             return 0
         }
         let insets = collectionView.contentInset
-        return collectionView.bounds.width - (insets.left + insets.right) - (CGFloat((numberOfColumns - 1)) * cellInterItemSpacing)
+        return collectionView.bounds.width - (insets.left + insets.right)// - (CGFloat((numberOfColumns - 1)) * cellInterItemSpacing)
     }
 
     override var collectionViewContentSize: CGSize {
@@ -43,10 +43,10 @@ class DynamicCollectionLayout: UICollectionViewFlowLayout {
             return
         }
         
-        let columnWidth = contentWidth / CGFloat(numberOfColumns)
+        let columnWidth = contentWidth / CGFloat(numberOfColumns )
         var xOffset = [CGFloat]()
         for column in 0..<numberOfColumns {
-            xOffset.append(CGFloat(column) * (columnWidth + cellInterItemSpacing))
+            xOffset.append(CGFloat(column) * (columnWidth))// + cellInterItemSpacing))
         }
         
         var column = Int()
@@ -64,19 +64,19 @@ class DynamicCollectionLayout: UICollectionViewFlowLayout {
                            y: yOffset[column],
                            width: columnWidth,
                            height: height)
-        let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
-          
-        // 5
-        let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-        attributes.frame = insetFrame
-        cache.append(attributes)
-          
-        // 6
-        contentHeight = max(contentHeight, frame.maxY)
-        yOffset[column] = yOffset[column] + height + 16
-          
-        column = column < (numberOfColumns - 1) ? (column + 1) : 0
-      }
+            let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
+              
+            // 5
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+            attributes.frame = insetFrame
+            cache.append(attributes)
+              
+            // 6
+            contentHeight = max(contentHeight, frame.maxY)
+            yOffset[column] = yOffset[column] + height
+              
+            column = column < (numberOfColumns - 1) ? (column + 1) : 0
+        }
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

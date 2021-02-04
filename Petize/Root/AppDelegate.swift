@@ -12,6 +12,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    override init() {
+        super.init()
+        UIFont.overrideInitialize()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Override point for customization after application launch.
@@ -23,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         window!.rootViewController = navigationController
         window!.makeKeyAndVisible()
+        for family: String in UIFont.familyNames {
+            print("\(family)")
+            for names: String in UIFont.fontNames(forFamilyName: family) {
+                print("== \(names)")
+            }
+        }
         return true
     }
 }
